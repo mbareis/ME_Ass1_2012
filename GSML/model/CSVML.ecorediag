@@ -100,14 +100,14 @@
       <styles xmi:type="notation:FilteringStyle" xmi:id="_wkZa4ydvEeKxe6O3YkAiQg"/>
     </children>
     <styles xmi:type="notation:ShapeStyle" xmi:id="_wkXlsSdvEeKxe6O3YkAiQg" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
-    <element xmi:type="ecore:EClass" href="CSVML.ecore#//Static"/>
+    <element xmi:type="ecore:EClass" href="CSVML.ecore#//StaticField.1"/>
     <layoutConstraint xmi:type="notation:Bounds" xmi:id="_wkXlsidvEeKxe6O3YkAiQg" x="20" y="315"/>
   </children>
   <children xmi:type="notation:Node" xmi:id="_w3A04CdvEeKxe6O3YkAiQg" type="1001">
     <children xmi:type="notation:Node" xmi:id="_w3Bb8CdvEeKxe6O3YkAiQg" type="4001"/>
     <children xmi:type="notation:Node" xmi:id="_w3CDACdvEeKxe6O3YkAiQg" type="5001">
       <children xmi:type="notation:Node" xmi:id="_JhvpQCdwEeKxe6O3YkAiQg" type="2001">
-        <element xmi:type="ecore:EAttribute" href="CSVML.ecore#//Aggregation/AggregationType"/>
+        <element xmi:type="ecore:EAttribute" href="CSVML.ecore#//AggregationField/AggregationType"/>
         <layoutConstraint xmi:type="notation:Location" xmi:id="_JhvpQSdwEeKxe6O3YkAiQg"/>
       </children>
       <styles xmi:type="notation:DrawerStyle" xmi:id="_w3CDASdvEeKxe6O3YkAiQg"/>
@@ -120,7 +120,7 @@
       <styles xmi:type="notation:FilteringStyle" xmi:id="_w3CDBydvEeKxe6O3YkAiQg"/>
     </children>
     <styles xmi:type="notation:ShapeStyle" xmi:id="_w3A04SdvEeKxe6O3YkAiQg" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
-    <element xmi:type="ecore:EClass" href="CSVML.ecore#//Aggregation"/>
+    <element xmi:type="ecore:EClass" href="CSVML.ecore#//AggregationField"/>
     <layoutConstraint xmi:type="notation:Bounds" xmi:id="_w3A04idvEeKxe6O3YkAiQg" x="170" y="310"/>
   </children>
   <children xmi:type="notation:Node" xmi:id="_xIK2UCdvEeKxe6O3YkAiQg" type="1001">
@@ -136,7 +136,7 @@
       <styles xmi:type="notation:FilteringStyle" xmi:id="_xINSkydvEeKxe6O3YkAiQg"/>
     </children>
     <styles xmi:type="notation:ShapeStyle" xmi:id="_xIK2USdvEeKxe6O3YkAiQg" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
-    <element xmi:type="ecore:EClass" href="CSVML.ecore#//RuleBased"/>
+    <element xmi:type="ecore:EClass" href="CSVML.ecore#//RuleBasedField"/>
     <layoutConstraint xmi:type="notation:Bounds" xmi:id="_xIK2UidvEeKxe6O3YkAiQg" x="470" y="310"/>
   </children>
   <children xmi:type="notation:Node" xmi:id="__gQWMCdvEeKxe6O3YkAiQg" type="1005">
@@ -173,6 +173,14 @@
         <element xmi:type="ecore:EAttribute" href="CSVML.ecore#//Rule.1/index"/>
         <layoutConstraint xmi:type="notation:Location" xmi:id="_qSS4wSdxEeKxe6O3YkAiQg"/>
       </children>
+      <children xmi:type="notation:Node" xmi:id="_hD8jUCplEeKO_9RKHjdIdA" type="2001">
+        <element xmi:type="ecore:EAttribute" href="CSVML.ecore#//Rule.1/ResultValue"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_hD8jUSplEeKO_9RKHjdIdA"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_ufC2gCplEeKO_9RKHjdIdA" type="2001">
+        <element xmi:type="ecore:EAttribute" href="CSVML.ecore#//Rule.1/DefaultValue"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_ufC2gSplEeKO_9RKHjdIdA"/>
+      </children>
       <styles xmi:type="notation:DrawerStyle" xmi:id="_aZl6sidxEeKxe6O3YkAiQg"/>
       <styles xmi:type="notation:SortingStyle" xmi:id="_aZl6sydxEeKxe6O3YkAiQg"/>
       <styles xmi:type="notation:FilteringStyle" xmi:id="_aZl6tCdxEeKxe6O3YkAiQg"/>
@@ -184,7 +192,7 @@
     </children>
     <styles xmi:type="notation:ShapeStyle" xmi:id="_aZkskSdxEeKxe6O3YkAiQg" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
     <element xmi:type="ecore:EClass" href="CSVML.ecore#//Rule.1"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_aZkskidxEeKxe6O3YkAiQg" x="495" y="390"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_aZkskidxEeKxe6O3YkAiQg" x="470" y="400"/>
   </children>
   <children xmi:type="notation:Node" xmi:id="_i2z-oCdxEeKxe6O3YkAiQg" type="1001">
     <children xmi:type="notation:Node" xmi:id="_i20lsCdxEeKxe6O3YkAiQg" type="4001"/>
@@ -200,7 +208,7 @@
     </children>
     <styles xmi:type="notation:ShapeStyle" xmi:id="_i2z-oSdxEeKxe6O3YkAiQg" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
     <element xmi:type="ecore:EClass" href="CSVML.ecore#//ComparisonRule"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_i2z-oidxEeKxe6O3YkAiQg" x="380" y="465"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_i2z-oidxEeKxe6O3YkAiQg" x="270" y="425"/>
   </children>
   <children xmi:type="notation:Node" xmi:id="_k4Y00CdxEeKxe6O3YkAiQg" type="1001">
     <children xmi:type="notation:Node" xmi:id="_k4Zb4CdxEeKxe6O3YkAiQg" type="4001"/>
@@ -216,7 +224,7 @@
     </children>
     <styles xmi:type="notation:ShapeStyle" xmi:id="_k4Y00SdxEeKxe6O3YkAiQg" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
     <element xmi:type="ecore:EClass" href="CSVML.ecore#//CompositeRule"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_k4Y00idxEeKxe6O3YkAiQg" x="607" y="460" width="121"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_k4Y00idxEeKxe6O3YkAiQg" x="665" y="415" width="121"/>
   </children>
   <styles xmi:type="notation:DiagramStyle" xmi:id="_YrYBcSH3EeKceqhocV1TEw"/>
   <element xmi:type="ecore:EPackage" href="CSVML.ecore#/"/>
@@ -260,19 +268,6 @@
     <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_62dgkydvEeKxe6O3YkAiQg" points="[-5, -9, 53, 94]$[-7, -61, 51, 42]"/>
     <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_62hyACdvEeKxe6O3YkAiQg" id="(0.16666666666666666,0.23255813953488372)"/>
   </edges>
-  <edges xmi:type="notation:Edge" xmi:id="_-Z2SUCdwEeKxe6O3YkAiQg" type="3002" source="_w3A04CdvEeKxe6O3YkAiQg" target="_pP_DQCH3EeKceqhocV1TEw">
-    <children xmi:type="notation:Node" xmi:id="_-Z25YCdwEeKxe6O3YkAiQg" type="4011">
-      <layoutConstraint xmi:type="notation:Location" xmi:id="_-Z25YSdwEeKxe6O3YkAiQg" x="-36" y="59"/>
-    </children>
-    <children xmi:type="notation:Node" xmi:id="_-Z3gcCdwEeKxe6O3YkAiQg" type="4012">
-      <layoutConstraint xmi:type="notation:Location" xmi:id="_-Z3gcSdwEeKxe6O3YkAiQg" x="-1" y="19"/>
-    </children>
-    <styles xmi:type="notation:ConnectorStyle" xmi:id="_-Z2SUSdwEeKxe6O3YkAiQg" lineColor="4210752"/>
-    <styles xmi:type="notation:FontStyle" xmi:id="_-Z2SUidwEeKxe6O3YkAiQg" fontColor="4210752" fontName="Segoe UI" fontHeight="10"/>
-    <element xmi:type="ecore:EReference" href="CSVML.ecore#//Aggregation/aggregatedfields.1"/>
-    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_-Z2SUydwEeKxe6O3YkAiQg" points="[-21, -24, 85, 98]$[-104, -159, 2, -37]"/>
-    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_-Z8Y8CdwEeKxe6O3YkAiQg" id="(0.7712765957446809,0.4470588235294118)"/>
-  </edges>
   <edges xmi:type="notation:Edge" xmi:id="_E4hl8CdxEeKxe6O3YkAiQg" type="3003" source="_xIK2UCdvEeKxe6O3YkAiQg" target="_pP_DQCH3EeKceqhocV1TEw">
     <styles xmi:type="notation:ConnectorStyle" xmi:id="_E4hl8SdxEeKxe6O3YkAiQg" routing="Rectilinear" lineColor="4210752"/>
     <styles xmi:type="notation:FontStyle" xmi:id="_E4hl8idxEeKxe6O3YkAiQg" fontName="Segoe UI"/>
@@ -297,11 +292,24 @@
       <layoutConstraint xmi:type="notation:Location" xmi:id="_0z2zACdxEeKxe6O3YkAiQg" x="-10" y="-24"/>
     </children>
     <children xmi:type="notation:Node" xmi:id="_0z2zASdxEeKxe6O3YkAiQg" type="4012">
-      <layoutConstraint xmi:type="notation:Location" xmi:id="_0z2zAidxEeKxe6O3YkAiQg" x="10" y="10"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_0z2zAidxEeKxe6O3YkAiQg" x="-12" y="17"/>
     </children>
     <styles xmi:type="notation:ConnectorStyle" xmi:id="_0z1k4SdxEeKxe6O3YkAiQg" lineColor="4210752"/>
     <styles xmi:type="notation:FontStyle" xmi:id="_0z1k4idxEeKxe6O3YkAiQg" fontColor="4210752" fontName="Segoe UI" fontHeight="10"/>
-    <element xmi:type="ecore:EReference" href="CSVML.ecore#//RuleBased/rule"/>
+    <element xmi:type="ecore:EReference" href="CSVML.ecore#//RuleBasedField/rules"/>
     <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_0z1k4ydxEeKxe6O3YkAiQg" points="[4, 21, -21, -63]$[18, 109, -7, 25]"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_Z8iRMCpkEeKO_9RKHjdIdA" type="3002" source="_w3A04CdvEeKxe6O3YkAiQg" target="_pP_DQCH3EeKceqhocV1TEw">
+    <children xmi:type="notation:Node" xmi:id="_Z8mioCpkEeKO_9RKHjdIdA" type="4011">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_Z8mioSpkEeKO_9RKHjdIdA" x="-54" y="17"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_Z8nwwCpkEeKO_9RKHjdIdA" type="4012">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_Z8nwwSpkEeKO_9RKHjdIdA" x="10" y="10"/>
+    </children>
+    <styles xmi:type="notation:ConnectorStyle" xmi:id="_Z8iRMSpkEeKO_9RKHjdIdA" lineColor="4210752"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_Z8iRMipkEeKO_9RKHjdIdA" fontColor="4210752" fontName="Segoe UI" fontHeight="10"/>
+    <element xmi:type="ecore:EReference" href="CSVML.ecore#//AggregationField/fields"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Z8iRMypkEeKO_9RKHjdIdA" points="[-10, -7, 151, 89]$[-68, -92, 93, 4]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Z8t3YCpkEeKO_9RKHjdIdA" id="(0.804,0.1568627450980392)"/>
   </edges>
 </notation:Diagram>

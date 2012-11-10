@@ -85,7 +85,7 @@
     </children>
     <styles xmi:type="notation:ShapeStyle" xmi:id="_S0a_sSH4EeKceqhocV1TEw" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
     <element xmi:type="ecore:EEnum" href="CSVML.ecore#//FieldTypTypes"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_S0a_siH4EeKceqhocV1TEw" x="35" y="35"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_S0a_siH4EeKceqhocV1TEw" x="36" y="35"/>
   </children>
   <children xmi:type="notation:Node" xmi:id="_wkXlsCdvEeKxe6O3YkAiQg" type="1001">
     <children xmi:type="notation:Node" xmi:id="_wkYz0CdvEeKxe6O3YkAiQg" type="4001"/>
@@ -238,7 +238,7 @@
     </children>
     <styles xmi:type="notation:ShapeStyle" xmi:id="_k4Y00SdxEeKxe6O3YkAiQg" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
     <element xmi:type="ecore:EClass" href="CSVML.ecore#//CompositeRule"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_k4Y00idxEeKxe6O3YkAiQg" x="695" y="425" width="233"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_k4Y00idxEeKxe6O3YkAiQg" x="695" y="428" width="233"/>
   </children>
   <children xmi:type="notation:Node" xmi:id="_YkexwCpnEeKO_9RKHjdIdA" type="1005">
     <children xmi:type="notation:Node" xmi:id="_Ykgm8CpnEeKO_9RKHjdIdA" type="4010"/>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="ASCII"?>
+<gsml:GradingSystem
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:gsml="http://gsml/1.0"
+    xsi:schemaLocation="http://gsml/1.0 GSML.ecore">
+  <courses Name="Model Engineering">
+    <gradings
+        Semester="WS 2012/2013">
+      <tasks
+          xsi:type="gsml:TaskGroup"
+          Name="Lecture part">
+        <contains
+            xsi:type="gsml:ConcreteTask"
+            Name="Exam 1"
+            MinRequirement="50.0"
+            MinRequirementType="Relative"/>
+        <contains
+            xsi:type="gsml:ConcreteTask"
+            Name="Exam 2"
+            MinRequirement="50.0"
+            MinRequirementType="Relative"/>
+      </tasks>
+      <tasks
+          xsi:type="gsml:TaskGroup"
+          Name="Lab part">
+        <contains
+            xsi:type="gsml:ConcreteTask"
+            Name="Lab 1 Meta Modeling"
+            MinRequirement="8.0"
+            MaxPoints="25.0"/>
+        <contains
+            xsi:type="gsml:ConcreteTask"
+            Name="Lab 2 Concrete Syntax"
+            MinRequirement="8.0"
+            MaxPoints="25.0"/>
+        <contains
+            xsi:type="gsml:ConcreteTask"
+            Name="Model Transformation"
+            MinRequirement="8.0"
+            MaxPoints="25.0"/>
+        <contains
+            xsi:type="gsml:ConcreteTask"
+            Name="Code Generation"
+            MinRequirement="8.0"
+            MaxPoints="25.0"/>
+      </tasks>
+    </gradings>
+    <gradingscheme>
+      <grades
+          Name="S1"
+          RequiredPoints="176.0"/>
+      <grades
+          Name="U2"
+          RequiredPoints="150.0"/>
+      <grades
+          Name="B3"
+          RequiredPoints="124.0"/>
+      <grades
+          Name="G4"
+          RequiredPoints="100.0"/>
+      <grades
+          Name="N5"/>
+    </gradingscheme>
+  </courses>
+</gsml:GradingSystem>

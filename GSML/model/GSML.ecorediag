@@ -101,7 +101,7 @@
     </children>
     <styles xmi:type="notation:ShapeStyle" xmi:id="_PuxOcSHZEeKbQp36yZkRqA" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
     <element xmi:type="ecore:EEnum" href="GSML.ecore#//MinRequirementType"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_PuxOciHZEeKbQp36yZkRqA" x="30" y="50"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_PuxOciHZEeKbQp36yZkRqA" x="40" y="68"/>
   </children>
   <children xmi:type="notation:Node" xmi:id="_Cs7BYCHcEeKbQp36yZkRqA" type="1001">
     <children xmi:type="notation:Node" xmi:id="_Cs8PgCHcEeKbQp36yZkRqA" type="4001"/>
@@ -177,7 +177,7 @@
     </children>
     <styles xmi:type="notation:ShapeStyle" xmi:id="_gen_gSHwEeKbQp36yZkRqA" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
     <element xmi:type="ecore:EClass" href="GSML.ecore#//Grading"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gen_giHwEeKbQp36yZkRqA" x="210" y="165"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gen_giHwEeKbQp36yZkRqA" x="210" y="165" height="50"/>
   </children>
   <children xmi:type="notation:Shape" xmi:id="__Ig2gCdtEeKxe6O3YkAiQg" type="Note" fontName="Segoe UI" description="containment?" fillColor="13369343" transparency="0" lineColor="6737151" lineWidth="1">
     <children xmi:type="notation:BasicDecorationNode" xmi:id="__Ix8QCdtEeKxe6O3YkAiQg" type="DiagramName">
@@ -189,7 +189,7 @@
     <styles xmi:type="notation:TextStyle" xmi:id="__Ig2gSdtEeKxe6O3YkAiQg"/>
     <styles xmi:type="notation:LineTypeStyle" xmi:id="__Ig2gidtEeKxe6O3YkAiQg"/>
     <element xsi:nil="true"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="__Ig2gydtEeKxe6O3YkAiQg" x="255" y="230" width="106" height="36"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="__Ig2gydtEeKxe6O3YkAiQg" x="296" y="232" width="106" height="36"/>
   </children>
   <styles xmi:type="notation:DiagramStyle" xmi:id="_iu_zkSHYEeKbQp36yZkRqA"/>
   <element xmi:type="ecore:EPackage" href="GSML.ecore#/"/>
@@ -259,18 +259,6 @@
     <styles xmi:type="notation:FontStyle" xmi:id="_0Os88iHeEeKbQp36yZkRqA" fontColor="4210752" fontName="Segoe UI" fontHeight="10"/>
     <element xmi:type="ecore:EReference" href="GSML.ecore#//GradingSystem/courses"/>
     <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_0Os88yHeEeKbQp36yZkRqA" points="[-54, 14, 125, -35]$[-112, 43, 67, -6]"/>
-  </edges>
-  <edges xmi:type="notation:Edge" xmi:id="_Vh6vcCHyEeKbQp36yZkRqA" type="3002" source="_gen_gCHwEeKbQp36yZkRqA" target="_Cs7BYCHcEeKbQp36yZkRqA">
-    <children xmi:type="notation:Node" xmi:id="_Vh6vdCHyEeKbQp36yZkRqA" type="4011">
-      <layoutConstraint xmi:type="notation:Location" xmi:id="_Vh6vdSHyEeKbQp36yZkRqA" x="19" y="-18"/>
-    </children>
-    <children xmi:type="notation:Node" xmi:id="_Vh6vdiHyEeKbQp36yZkRqA" type="4012">
-      <layoutConstraint xmi:type="notation:Location" xmi:id="_Vh6vdyHyEeKbQp36yZkRqA" x="10" y="10"/>
-    </children>
-    <styles xmi:type="notation:ConnectorStyle" xmi:id="_Vh6vcSHyEeKbQp36yZkRqA" lineColor="4210752"/>
-    <styles xmi:type="notation:FontStyle" xmi:id="_Vh6vciHyEeKbQp36yZkRqA" fontColor="4210752" fontName="Segoe UI" fontHeight="10"/>
-    <element xmi:type="ecore:EReference" href="GSML.ecore#//Grading/gradingscheme"/>
-    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Vh6vcyHyEeKbQp36yZkRqA" points="[68, 9, -217, -36]$[218, 36, -67, -9]"/>
   </edges>
   <edges xmi:type="notation:Edge" xmi:id="_PFIEMCduEeKxe6O3YkAiQg" type="3002" source="_Cs7BYCHcEeKbQp36yZkRqA" target="_EqJjECHcEeKbQp36yZkRqA">
     <children xmi:type="notation:Node" xmi:id="_PFIrQCduEeKxe6O3YkAiQg" type="4011">

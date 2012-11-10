@@ -101,7 +101,7 @@
     </children>
     <styles xmi:type="notation:ShapeStyle" xmi:id="_PuxOcSHZEeKbQp36yZkRqA" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
     <element xmi:type="ecore:EEnum" href="GSML.ecore#//MinRequirementType"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_PuxOciHZEeKbQp36yZkRqA" x="40" y="68"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_PuxOciHZEeKbQp36yZkRqA" x="40" y="72"/>
   </children>
   <children xmi:type="notation:Node" xmi:id="_Cs7BYCHcEeKbQp36yZkRqA" type="1001">
     <children xmi:type="notation:Node" xmi:id="_Cs8PgCHcEeKbQp36yZkRqA" type="4001"/>
@@ -273,5 +273,30 @@
     <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_PFIEMyduEeKxe6O3YkAiQg" points="[-5, 21, 23, -89]$[-27, 90, 1, -20]"/>
     <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_PFNjwCduEeKxe6O3YkAiQg" id="(0.22123893805309736,0.4883720930232558)"/>
     <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_PFNjwSduEeKxe6O3YkAiQg" id="(0.07894736842105263,0.24705882352941178)"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_l7qmsCtWEeKqFI9Ls1FONg" type="3002" source="_gen_gCHwEeKbQp36yZkRqA" target="_6Dw6kCHYEeKbQp36yZkRqA">
+    <children xmi:type="notation:Node" xmi:id="_l7qmtCtWEeKqFI9Ls1FONg" type="4011">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_l7qmtStWEeKqFI9Ls1FONg" x="-19" y="34"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_l7rNwCtWEeKqFI9Ls1FONg" type="4012">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_l7rNwStWEeKqFI9Ls1FONg" x="10" y="10"/>
+    </children>
+    <styles xmi:type="notation:ConnectorStyle" xmi:id="_l7qmsStWEeKqFI9Ls1FONg" lineColor="4210752"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_l7qmsitWEeKqFI9Ls1FONg" fontColor="4210752" fontName="Lucida Grande" fontHeight="10"/>
+    <element xmi:type="ecore:EReference" href="GSML.ecore#//Grading/has"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_l7qmsytWEeKqFI9Ls1FONg" points="[3, -3, -91, 106]$[103, -133, 9, -24]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_l7sb4CtWEeKqFI9Ls1FONg" id="(0.5378151260504201,0.8)"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_tq1R0CtWEeKqFI9Ls1FONg" type="3002" source="_mXfkQCHYEeKbQp36yZkRqA" target="_Cs7BYCHcEeKbQp36yZkRqA">
+    <children xmi:type="notation:Node" xmi:id="_tq1R1CtWEeKqFI9Ls1FONg" type="4011">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_tq144CtWEeKqFI9Ls1FONg" x="11" y="-54"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_tq144StWEeKqFI9Ls1FONg" type="4012">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_tq144itWEeKqFI9Ls1FONg" x="10" y="10"/>
+    </children>
+    <styles xmi:type="notation:ConnectorStyle" xmi:id="_tq1R0StWEeKqFI9Ls1FONg" lineColor="4210752"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_tq1R0itWEeKqFI9Ls1FONg" fontColor="4210752" fontName="Lucida Grande" fontHeight="10"/>
+    <element xmi:type="ecore:EReference" href="GSML.ecore#//Course/gradingScheme"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_tq1R0ytWEeKqFI9Ls1FONg" points="[23, 24, -82, -93]$[155, 123, 50, 6]"/>
   </edges>
 </notation:Diagram>

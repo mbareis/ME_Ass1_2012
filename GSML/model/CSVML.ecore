@@ -8,13 +8,12 @@
   <eClassifiers xsi:type="ecore:EClass" name="FileDefinition">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="Name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="fielddefinitions" lowerBound="1"
-        upperBound="-1" eType="#//FieldDefinition"/>
+        upperBound="-1" eType="#//FieldDefinition" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="FieldDefinition" abstract="true">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="Index" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="Name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="FieldType" eType="#//FieldTypTypes"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="rule" eType="#//Rule.1"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="FieldTypTypes">
     <eLiterals name="String"/>
@@ -22,19 +21,14 @@
     <eLiterals name="Boolean" value="2"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="StaticField" eSuperTypes="#//FieldDefinition"/>
-  <eClassifiers xsi:type="ecore:EClass" name="DerivedField" eSuperTypes="#//FieldDefinition"/>
-  <eClassifiers xsi:type="ecore:EClass" name="Rule"/>
-  <eClassifiers xsi:type="ecore:EClass" name="StaticField" eSuperTypes="#//FieldDefinition"/>
   <eClassifiers xsi:type="ecore:EClass" name="AggregationField" eSuperTypes="#//FieldDefinition">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="AggregationType" eType="#//AggregationTypes"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="aggregatedfields" lowerBound="1"
-        upperBound="-1" eType="#//FieldDefinition"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="fields" lowerBound="1"
         upperBound="-1" eType="#//FieldDefinition"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="RuleBasedField" eSuperTypes="#//FieldDefinition">
     <eStructuralFeatures xsi:type="ecore:EReference" name="rules" upperBound="-1"
-        eType="#//Rule.1"/>
+        eType="#//Rule" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="AggregationTypes">
     <eLiterals name="sum"/>
@@ -43,28 +37,28 @@
     <eLiterals name="maximum" value="3"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Rule" abstract="true">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="index" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Index" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="ResultValue" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="DefaultValue" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="ComparisonRule" eSuperTypes="#//Rule.1">
+  <eClassifiers xsi:type="ecore:EClass" name="ComparisonRule" eSuperTypes="#//Rule">
     <eStructuralFeatures xsi:type="ecore:EReference" name="comparisonfield" lowerBound="1"
         eType="#//FieldDefinition"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="ComparisonValue" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="Operator" eType="#//CompOperatorTypes"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="CompositeRule" eSuperTypes="#//Rule.1">
+  <eClassifiers xsi:type="ecore:EClass" name="CompositeRule" eSuperTypes="#//Rule">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="Operator" eType="#//LogicalOperatorTypes"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="composedrules" lowerBound="1"
-        upperBound="-1" eType="#//Rule.1"/>
+        upperBound="-1" eType="#//Rule" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="CompOperatorTypes">
-    <eLiterals name="Greater" literal=">"/>
-    <eLiterals name="GreaterOrEquals" value="1" literal=">="/>
-    <eLiterals name="Lower" value="2" literal="&lt;"/>
-    <eLiterals name="LowerOrEquals" value="3" literal="&lt;="/>
-    <eLiterals name="Unequals" value="4" literal="!="/>
-    <eLiterals name="Equals" value="5" literal="=="/>
+    <eLiterals name="Greater"/>
+    <eLiterals name="GreaterOrEquals" value="1"/>
+    <eLiterals name="Lower" value="2"/>
+    <eLiterals name="LowerOrEquals" value="3"/>
+    <eLiterals name="Unequals" value="4"/>
+    <eLiterals name="Equals" value="5"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="LogicalOperatorTypes">
     <eLiterals name="AND"/>

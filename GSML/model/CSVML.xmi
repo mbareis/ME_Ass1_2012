@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="ASCII"?>
+<csvml:FileDefinitionSet
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:csvml="http://csvml/1.0"
+    xsi:schemaLocation="http://csvml/1.0 CSVML.ecore">
+  <filedefinitions>
+    <fielddefinitions
+        xsi:type="csvml:StaticField"
+        Name="Student Registration Number"/>
+    <fielddefinitions
+        xsi:type="csvml:StaticField"
+        Index="1"
+        Name="Student First Name"/>
+    <fielddefinitions
+        xsi:type="csvml:StaticField"
+        Index="2"
+        Name="Student Last Name"/>
+    <fielddefinitions
+        xsi:type="csvml:StaticField"
+        Index="3"
+        Name="Lecture Part Exam 1 Points"
+        FieldType="Integer"/>
+    <fielddefinitions
+        xsi:type="csvml:StaticField"
+        Index="4"
+        Name="Lecture Part Exam 2 Points"
+        FieldType="Integer"/>
+    <fielddefinitions
+        xsi:type="csvml:StaticField"
+        Index="5"
+        Name="Lab Part Lab 1 Points"
+        FieldType="Integer"/>
+    <fielddefinitions
+        xsi:type="csvml:StaticField"
+        Index="6"
+        Name="Lab Part Lab 2 Points"
+        FieldType="Integer"/>
+    <fielddefinitions
+        xsi:type="csvml:StaticField"
+        Index="7"
+        Name="Lab Part Lab 3 Points"
+        FieldType="Integer"/>
+    <fielddefinitions
+        xsi:type="csvml:StaticField"
+        Index="8"
+        Name="Lab Part Lab 4 Points"
+        FieldType="Integer"/>
+    <fielddefinitions
+        xsi:type="csvml:AggregationField"
+        Index="9"
+        Name="Lecture Part Sum"
+        FieldType="Integer"
+        fields="//@filedefinitions.0/@fielddefinitions.3 //@filedefinitions.0/@fielddefinitions.4"/>
+    <fielddefinitions
+        xsi:type="csvml:AggregationField"
+        Index="10"
+        Name="Lab Part Sum"
+        FieldType="Integer"
+        fields="//@filedefinitions.0/@fielddefinitions.5 //@filedefinitions.0/@fielddefinitions.6 //@filedefinitions.0/@fielddefinitions.7 //@filedefinitions.0/@fielddefinitions.8"/>
+    <fielddefinitions
+        xsi:type="csvml:RuleBasedField"
+        Index="11"
+        Name="Min Requirements Fullfilled"
+        FieldType="Boolean">
+      <rules
+          xsi:type="csvml:CompositeRule"
+          ResultValue=""
+          DefaultValue="">
+        <composedrules
+            xsi:type="csvml:ComparisonRule"
+            ResultValue=""
+            comparisonfield="//@filedefinitions.0/@fielddefinitions.3"
+            ComparisonValue="25"
+            Operator="GreaterOrEquals"/>
+        <composedrules
+            xsi:type="csvml:ComparisonRule"
+            Index="1"
+            ResultValue=""
+            DefaultValue=""
+            comparisonfield="//@filedefinitions.0/@fielddefinitions.4"
+            ComparisonValue="25"
+            Operator="GreaterOrEquals"/>
+        <composedrules
+            xsi:type="csvml:ComparisonRule"
+            Index="2"
+            ResultValue=""
+            comparisonfield="//@filedefinitions.0/@fielddefinitions.5"
+            ComparisonValue="8"
+            Operator="GreaterOrEquals"/>
+        <composedrules
+            xsi:type="csvml:ComparisonRule"
+            Index="3"
+            ResultValue=""
+            DefaultValue=""
+            comparisonfield="//@filedefinitions.0/@fielddefinitions.6"
+            ComparisonValue="8"
+            Operator="GreaterOrEquals"/>
+        <composedrules
+            xsi:type="csvml:ComparisonRule"
+            Index="4"
+            ResultValue=""
+            DefaultValue=""
+            comparisonfield="//@filedefinitions.0/@fielddefinitions.7"
+            ComparisonValue="8"
+            Operator="GreaterOrEquals"/>
+        <composedrules
+            xsi:type="csvml:ComparisonRule"
+            Index="5"
+            ResultValue=""
+            DefaultValue=""
+            comparisonfield="//@filedefinitions.0/@fielddefinitions.8"
+            ComparisonValue="8"
+            Operator="GreaterOrEquals"/>
+        <composedrules
+            xsi:type="csvml:ComparisonRule"
+            Index="6"
+            ResultValue=""
+            DefaultValue=""
+            comparisonfield="//@filedefinitions.0/@fielddefinitions.10"
+            ComparisonValue="50"
+            Operator="GreaterOrEquals"/>
+      </rules>
+    </fielddefinitions>
+    <fielddefinitions
+        xsi:type="csvml:AggregationField"
+        Index="12"
+        Name="Total Sum"
+        FieldType="Integer"
+        fields="//@filedefinitions.0/@fielddefinitions.3 //@filedefinitions.0/@fielddefinitions.4 //@filedefinitions.0/@fielddefinitions.5 //@filedefinitions.0/@fielddefinitions.6 //@filedefinitions.0/@fielddefinitions.7 //@filedefinitions.0/@fielddefinitions.8"/>
+    <fielddefinitions
+        xsi:type="csvml:RuleBasedField"
+        Index="13"
+        Name="Grade">
+      <rules
+          xsi:type="csvml:ComparisonRule"
+          ResultValue="N5"
+          DefaultValue=""
+          comparisonfield="//@filedefinitions.0/@fielddefinitions.11"
+          ComparisonValue="false"
+          Operator="Equals"/>
+      <rules
+          xsi:type="csvml:ComparisonRule"
+          Index="1"
+          ResultValue="S1"
+          DefaultValue=""
+          comparisonfield="//@filedefinitions.0/@fielddefinitions.12"
+          ComparisonValue="176"
+          Operator="GreaterOrEquals"/>
+      <rules
+          xsi:type="csvml:ComparisonRule"
+          Index="2"
+          ResultValue="U2"
+          comparisonfield="//@filedefinitions.0/@fielddefinitions.12"
+          ComparisonValue="150"
+          Operator="GreaterOrEquals"/>
+      <rules
+          xsi:type="csvml:ComparisonRule"
+          Index="3"
+          ResultValue="B3"
+          comparisonfield="//@filedefinitions.0/@fielddefinitions.12"
+          ComparisonValue="124"
+          Operator="GreaterOrEquals"/>
+      <rules
+          xsi:type="csvml:ComparisonRule"
+          Index="4"
+          ResultValue="G4"
+          comparisonfield="//@filedefinitions.0/@fielddefinitions.12"
+          ComparisonValue="100"
+          Operator="GreaterOrEquals"/>
+      <rules
+          xsi:type="csvml:ComparisonRule"
+          Index="5"
+          ResultValue="N5"
+          comparisonfield="//@filedefinitions.0/@fielddefinitions.12"
+          ComparisonValue="0"
+          Operator="GreaterOrEquals"/>
+    </fielddefinitions>
+  </filedefinitions>
+</csvml:FileDefinitionSet>

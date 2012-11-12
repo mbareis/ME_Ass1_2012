@@ -66,58 +66,60 @@
         FieldType="Boolean">
       <rules
           xsi:type="csvml:CompositeRule"
-          ResultValue=""
-          DefaultValue="">
+          ResultValue="TRUE"
+          DefaultValue="FALSE">
         <composedrules
             xsi:type="csvml:ComparisonRule"
-            ResultValue=""
+            ResultValue="TRUE"
+            DefaultValue="FALSE"
             comparisonfield="//@filedefinitions.0/@fielddefinitions.3"
             ComparisonValue="25"
             Operator="GreaterOrEquals"/>
         <composedrules
             xsi:type="csvml:ComparisonRule"
             Index="1"
-            ResultValue=""
-            DefaultValue=""
+            ResultValue="TRUE"
+            DefaultValue="FALSE"
             comparisonfield="//@filedefinitions.0/@fielddefinitions.4"
             ComparisonValue="25"
             Operator="GreaterOrEquals"/>
         <composedrules
             xsi:type="csvml:ComparisonRule"
             Index="2"
-            ResultValue=""
+            ResultValue="TRUE"
+            DefaultValue="FALSE"
             comparisonfield="//@filedefinitions.0/@fielddefinitions.5"
             ComparisonValue="8"
             Operator="GreaterOrEquals"/>
         <composedrules
             xsi:type="csvml:ComparisonRule"
             Index="3"
-            ResultValue=""
-            DefaultValue=""
+            ResultValue="TRUE"
+            DefaultValue="FALSE"
             comparisonfield="//@filedefinitions.0/@fielddefinitions.6"
             ComparisonValue="8"
             Operator="GreaterOrEquals"/>
         <composedrules
             xsi:type="csvml:ComparisonRule"
             Index="4"
-            ResultValue=""
-            DefaultValue=""
+            ResultValue="TRUE"
+            DefaultValue="FALSE"
             comparisonfield="//@filedefinitions.0/@fielddefinitions.7"
             ComparisonValue="8"
             Operator="GreaterOrEquals"/>
         <composedrules
             xsi:type="csvml:ComparisonRule"
             Index="5"
-            ResultValue=""
-            DefaultValue=""
+            ResultValue="TRUE"
+            DefaultValue="FALSE"
             comparisonfield="//@filedefinitions.0/@fielddefinitions.8"
             ComparisonValue="8"
             Operator="GreaterOrEquals"/>
         <composedrules
             xsi:type="csvml:ComparisonRule"
             Index="6"
-            ResultValue=""
-            DefaultValue=""
+            ResultValue="TRUE"
+            DefaultValue="FALSE"
             comparisonfield="//@filedefinitions.0/@fielddefinitions.10"
             ComparisonValue="50"
             Operator="GreaterOrEquals"/>
